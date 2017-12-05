@@ -1,0 +1,16 @@
+.card{
+  width: 100%;
+  text-align: center;
+  font-family: KnowledgeLight
+}
+img.card-img-top{
+  width:100%;
+}
+a{
+  margin-bottom: 1rem;
+}
+input.form-control.input-box{
+  display: inline-block;
+  width:50%;
+  padding-right:20px;
+}

@@ -1,0 +1,5 @@
+<a href="#" class="list-group-item" [routerLink]='[order.id]'>
+    <h4 class="list-group-item-heading"><span style='padding-right: 10px;'>{{index}}</span>{{order.name}}</h4>
+    <span class="badge">{{order.amount}}</span>
+    <p class="list-group-item-text"><b>Total Amout for order {{index}}</b>{{order.price*order.amount}}</p>
+</a>

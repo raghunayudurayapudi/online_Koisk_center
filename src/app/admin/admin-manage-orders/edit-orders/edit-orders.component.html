@@ -1,0 +1,45 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Order Details</div>
+    <div class="panel-body">
+      <p>Order ID- {{order.id}}</p>
+      <p>Order ID- {{order.name}}</p>
+      <p>Order Type - {{order.type}}</p>
+      <p>Order Type - {{order.type}}</p>
+      <p>Order Time -{{order.time}}</p>
+      <div>
+          <p>Order Ammount- {{order.amount}}</p>
+          <label for="sel1"> Order Status:</label>
+            <p id='#sel1'>{{order.status}}</p>
+            <label for="KID"> Student ID:</label>
+            <p id='KID'>{{order.KID}}</p>
+        </div>
+    </div>
+  </div>
+  <form [formGroup]='editOrderForm' (ngSubmit)="onsubmit()">
+    <div class='form-inline'>
+        <div class="form-group">
+            <label for="KID">KID:</label>
+            <input type="text" class="form-control" formControlName='KID' id="KID">
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" formControlName='amount' class="form-control" id="amount">
+          </div>
+    </div>
+    <div class="form-group">
+        <label for="status">Change Status</label>
+        <select class="form-control"  formControlName='status' id="status">
+          <option value='inprogress'>In progress</option>
+          <option value='ready'>Ready</option>
+          <option value='readyToPickup'>Ready To Pick Up</option>
+          <option value='Declined'>Declined</option>
+        </select>
+      </div>
+      <div class="btn-group">
+          <button class="btn btn-success" [disabled]='editOrderForm.invalid' type='submit'>Update</button>
+          <button  class="btn btn-danger" type='button' (click)='Ondelete()'>Delete</button>
+          <button class="btn btn-warning" type='button' (click)='Oncancel()'>Cancel</button>
+        </div>
+    </form>
+
+

@@ -1,0 +1,19 @@
+<!-- <div class='row' ngIf='showItemsByCategory'>
+  <h3>Appetizers</h3>
+    <app-item-item  *ngFor="let itemEl of menu_items_apptizers; let i = index"
+    [item]="itemEl"
+    [index]="i"></app-item-item>
+</div>
+<div class='row'>
+  <h3>Sandwiches</h3>
+    <app-item-item *ngFor="let itemEl of menu_items_sandwitches; let i = index"
+    [item]="itemEl"
+    [index]="i"></app-item-item>
+</div> -->
+<h3>Sandwiches & Appetizers</h3>
+<div class='row'>
+  <app-item-item *ngFor="let itemEl of totalItems; let i = index"
+  [item]="itemEl"
+  [index]="i" class='col-12 col-md-3 col-lg-4' style='padding-bottom:10px;'></app-item-item>
+</div>
+

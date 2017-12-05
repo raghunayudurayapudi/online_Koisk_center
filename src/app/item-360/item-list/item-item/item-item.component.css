@@ -1,0 +1,18 @@
+.card{
+  width: 100%;
+  border: 1px solid #bdb7b7;
+  box-shadow: 1px 2px 2px;
+  text-align: center;
+  font-family: KnowledgeLight
+}
+img.card-img-top{
+  width:100%;
+}
+a{
+  margin-bottom: 1rem;
+}
+p.card-text{
+height:30px;
+font-size: 14px;
+line-height: 1.57;
+}
